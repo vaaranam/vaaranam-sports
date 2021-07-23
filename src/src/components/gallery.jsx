@@ -8,7 +8,7 @@ export const Gallery = (props) => {
         </div>
         <div className="row">
           <div className="portfolio-items">
-            {[1, 2, 3, 4, 5, 6, 7].map((i) => {
+            {[11, 12, 13, 14, 15, 16, 17].map((i) => {
               return (
                 <div
                   className="col-sm-6 col-md-4 col-lg-4"

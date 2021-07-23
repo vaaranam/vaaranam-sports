@@ -32,32 +32,39 @@ export const Header = (props) => {
     <header id="header">
       <div className="intro">
         <div className="overlay">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-8 col-md-offset-2 intro-text">
-                <span>
-                  <img
-                    src={`img/logo.png`}
-                    alt="Logo"
-                    style={{
-                      width: width * 0.3,
-                      resize: "inline",
-                      borderRadius: width * 0.3,
-                      backgroundColor: "rgba(255,255,255,0.3)",
-                    }}
-                  />
-                </span>
-                {/* <h1>
-                  {props.data ? props.data.title : "Loading"}
-                  <span></span>
-                </h1> */}
-                <p>{props.data ? props.data.paragraph : "Loading"}</p>
-                {/* <a
-                  href='#features'
-                  className='btn btn-custom btn-lg page-scroll'
+          <div className="container justify-content-center">
+            <div className="row " style={{ padding: 24 }}>
+              <div
+                className="col-md-6 col-xs-12"
+                style={{ textAlign: "center" }}
+              >
+                <img
+                  src={`img/logo.png`}
+                  alt="Logo"
+                  style={{
+                    width: width < 576 ? width * 0.5 : width * 0.3,
+                    resize: "inline",
+                    borderRadius: width < 576 ? width * 0.5 : width * 0.3,
+                    backgroundColor: "rgba(255,255,255,0.3)",
+                  }}
+                />
+              </div>
+              <div
+                className="col-md-6  col-xs-12"
+                style={{ textAlign: "center" }}
+              >
+                <div style={{ height: 72 }}></div>
+                <p
+                  style={{ fontWeight: "bold", fontSize: 40, marginBottom: 12 }}
                 >
-                  Learn More
-                </a>{' '} */}
+                  {props.data ? props.data.title : "Loading"}
+                </p>
+                <div style={{ fontSize: 18, color: "white" }}>
+                  {props.data ? props.data.paragraph : "Loading"}
+                </div>
+                <p style={{ fontSize: 30, marginTop: 36 }}>
+                  in association with Unique Sports Academy
+                </p>
               </div>
             </div>
           </div>
