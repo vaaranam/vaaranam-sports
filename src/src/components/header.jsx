@@ -53,16 +53,28 @@ export const Header = (props) => {
                 className="col-md-6  col-xs-12"
                 style={{ textAlign: "center" }}
               >
-                <div style={{ height: 72 }}></div>
+                <div style={{ height: 60 }}></div>
                 <p
-                  style={{ fontWeight: "bold", fontSize: 40, marginBottom: 12 }}
+                  style={{
+                    fontWeight: "bold",
+                    fontSize: 62,
+                    marginBottom: 12,
+                    lineHeight: "62px",
+                  }}
                 >
                   {props.data ? props.data.title : "Loading"}
                 </p>
-                <div style={{ fontSize: 18, color: "white" }}>
+                <div style={{ fontSize: 20, color: "white" }}>
                   {props.data ? props.data.paragraph : "Loading"}
                 </div>
-                <p style={{ fontSize: 30, marginTop: 36 }}>
+              </div>
+            </div>
+            <div className="row " style={{}}>
+              <div
+                className="col-md-12  col-xs-12"
+                style={{ textAlign: "right" }}
+              >
+                <p style={{ fontSize: 18, marginTop: 36, marginBottom: 12 }}>
                   in association with Unique Sports Academy
                 </p>
               </div>
