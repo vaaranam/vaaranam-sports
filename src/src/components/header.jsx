@@ -72,10 +72,20 @@ export const Header = (props) => {
             <div className="row " style={{}}>
               <div
                 className="col-md-12  col-xs-12"
-                style={{ textAlign: "right" }}
+                style={{ textAlign: width < 576 ? "center" : "right" }}
               >
-                <p style={{ fontSize: 18, marginTop: 36, marginBottom: 12 }}>
-                  in association with Unique Sports Academy
+                <p
+                  style={{
+                    fontSize: 18,
+                    marginTop: 0,
+                    marginBottom: 0,
+                    // textAlign: "center",
+                  }}
+                >
+                  in association with
+                  <p style={{ fontSize: 18, marginBottom: 12 }}>
+                    Unique Sports Academy
+                  </p>
                 </p>
               </div>
             </div>
