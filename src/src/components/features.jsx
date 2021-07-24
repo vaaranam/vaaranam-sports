@@ -29,7 +29,7 @@ export const Features = (props) => {
           <li class="list-group-item">
             CrossFit and Weight Loss program (all age groups)
           </li>
-          <li class="list-group-item">Ground Dimensions 40m x 20m 7's</li>
+          <li class="list-group-item">Ground Dimensions 40m x 20m (7's)</li>
         </ul>
       </div>
     </div>
