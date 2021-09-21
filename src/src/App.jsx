@@ -8,22 +8,24 @@ import { Gallery } from './components/gallery'
 import { Testimonials } from './components/testimonials'
 import { Team } from './components/Team'
 import { Contact } from './components/contact'
-import JsonData from './data/data.json'
-import SmoothScroll from 'smooth-scroll'
+import { Carousel } from "./components/carousel";
+import JsonData from "./data/data.json";
+import SmoothScroll from "smooth-scroll";
+import { Layout } from "antd";
 
 export const scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
   speedAsDuration: true,
-})
+});
 
 const App = () => {
-  const [landingPageData, setLandingPageData] = useState({})
+  const [landingPageData, setLandingPageData] = useState({});
   useEffect(() => {
-    setLandingPageData(JsonData)
-  }, [])
+    setLandingPageData(JsonData);
+  }, []);
 
   return (
-    <div>
+    <Layout>
       <Navigation />
       <Header data={landingPageData.Header} />
       <Features data={landingPageData.Features} />
@@ -31,9 +33,10 @@ const App = () => {
       {/* <Services data={landingPageData.Services} /> */}
       <Gallery />
       <Team data={landingPageData.Team} />
+      <Carousel data={landingPageData.Carousel} deviceType={"web"} />
       <Contact data={landingPageData.Contact} />
-    </div>
-  )
-}
+    </Layout>
+  );
+};
 
 export default App

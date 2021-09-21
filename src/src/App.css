@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+.carousel-container-custom {
+  width: 100%;
+}
+
+.service-custom {
+  margin-bottom: -100px;
+}
